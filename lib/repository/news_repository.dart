@@ -8,7 +8,7 @@ import '../models/news_channel_model.dart';
 // and converts it into a NewsChannelHeadlinesModel. If the request fails, it throws an error.
 class NewsRepository {
   Future<NewsChannelHeadlinesModel> fetchHeadlinesNewsApi(String category) async {
-    final apiKey = '7d13f756de7e421380d66c4d877d811a'; //  API key
+    final apiKey = 'xxx'; //  put ur API key
     final url = 'https://newsapi.org/v2/top-headlines?sources=$category&apiKey=$apiKey';
 
     final response = await http.get(Uri.parse(url));
